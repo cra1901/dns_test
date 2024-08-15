@@ -1,5 +1,5 @@
 locals{
-    dns_txt = "v=spf1 include:spf.protection.outlook.com include:emaileuc.freshservice.com include:spf-0055bf01.pphosted.com include:_spf.salesforce.com include:mg-spf.greenhouse.io include:aspmx.pardot.com ip4:52.214.50.118/32 ip4:52.215.241.173/32 ip4:52.215.241.174/32 -all"
+    dns_txt = "v=spf1 include:spf.protection.outlook.com include:emaileuc.freshservice.com \"\"include:spf-0055bf01.pphosted.com include:_spf.salesforce.com include:mg-spf.greenhouse.io include:aspmx.pardot.com ip4:52.214.50.118/32 ip4:52.215.241.173/32 ip4:52.215.241.174/32 -all"
 }
 
 data "aws_route53_zone" "cain-backup_zone"{
