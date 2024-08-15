@@ -15,7 +15,7 @@ data "aws_route53_record" "cain-backup_txt"{
     ttl     = "900"
 
 records = [
-    local.dns_txt,
+    locals.dns_txt
 ]
 } 
 
