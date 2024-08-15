@@ -2,7 +2,7 @@ locals{
     dns_txt = "v=spf1 include:spf.protection.outlook.com include:spf.protection.outlook.co.uk -all"
 }
 
-data "aws_route53_zone" "ccain-backup_zone"{
+data "aws_route53_zone" "cain-backup_zone"{
     provider = aws.aws_prod
     name    = "cain-backup.xyz"
 }
